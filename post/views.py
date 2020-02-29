@@ -6,6 +6,7 @@ from django.views.generic.detail import DetailView
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 
+from post.models import Post
 # Create your views here.
 
 class PostListView(ListView):
