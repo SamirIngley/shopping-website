@@ -13,3 +13,8 @@ class Post(models.Model):
 
     date_posted = models.DateTimeField(default=timezone.now)   # date posted now modifiable with 'default' field
     last_modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+    
