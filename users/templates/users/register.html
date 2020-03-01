@@ -20,13 +20,13 @@
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button type="submit" value="Submit"></button>
+                <button type="submit" value="Submit">Submit</button>
             </div>
         </form>
 
         <div class="border-top pt-3">
             <small class="text-muted">
-                Already have an Account? <a class="ml-2" href="#">Sign In</a>  
+                Already have an Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>  
             </small>
         </div>
 

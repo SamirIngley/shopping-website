@@ -22,12 +22,17 @@
         </a>
     </div>
 
+
     <div class="pages">
-
+        {% if user.is_authenticated %}
         <div class="pages_text">
-
-            <a href="#login">Login</a>
+            <a href="{% url 'profile' %}">Profile</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+            <a href="{% url 'login' %}">Login</a>
             <a href="{% url 'register' %}">Register</a>
+
+        {% endif %}
 
         </div>
     </div>
