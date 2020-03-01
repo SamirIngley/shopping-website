@@ -1,13 +1,16 @@
-body {
+.main-content {
     background-color: white;
     color: black;
+    margin: 40px;
+    
 }
 
 
 /* ********** NAV BAR ************ */
 nav {
     background-color: rgba(250, 235, 215, 0.425);
-    width: calc(100% - 240px);
+    /* width: calc(100% - 80px); */
+    width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -16,10 +19,6 @@ nav {
     padding-left: 100px;
     padding-bottom: 50px;
     padding-right: 100px;
-}
-
-.messages {
-    padding-top: 300px;
 }
 
 nav > div > div:nth-child(1) {
@@ -42,7 +41,7 @@ nav > div > div:nth-child(1) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 150px;
+    width: 200px;
 }
 
 .pages_text > a {
@@ -53,6 +52,10 @@ nav > div > div:nth-child(1) {
 
 .pages_text > a:hover {
     color: black;
+}
+
+.messages {
+    padding-top: 300px;
 }
 
 .main-content {
