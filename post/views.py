@@ -26,6 +26,7 @@ class PostDetailView(DetailView):
     def get(self, request, slug):
         ''' Renders specific post via slug.'''
         post = self.get_queryset().get(slug__iexact=slug)
-        return render(request, 'post/post.html', {
+        return render(request, 'post/about.html', {
             'post':post
         })
+

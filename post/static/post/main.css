@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+
+/* ********** NAV BAR ************ */
+nav {
+    background-color: antiquewhite;
+    width: calc(100% - 240px);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+}
+
+nav > div > div:nth-child(1) {
+    font-size: 2em;
+}
+
+.name > a {
+    text-decoration: none;
+}
+
+.name > a:link {
+    color:black;
+}
+
+.name > a:visited {
+    color:black;
+}
+
+.pages_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.pages_text > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+}
+
+.pages_text > a:hover {
+    color: black;
+}

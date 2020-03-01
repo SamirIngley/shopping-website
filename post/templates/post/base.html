@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='{% static 'post/main.css' %}'>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Shop</title>
+    {% endif %}
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="name">
+            <a href="{% url 'post-list-page' %}">
+                <h1> Shop </h1>
+            </a>
+        </div>
+
+        <div class="pages">
+
+            <div class="pages_text">
+                <a href="#cart">Cart</a>
+                <a href="#settings">Settings</a>
+
+
+                <a href="#login">Login</a>
+                <a href="#register">Register</a>
+
+                <a href="#new-post">New Post</a>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+
+
+    {% endblock %}
+
+</body>
+
+</html>
