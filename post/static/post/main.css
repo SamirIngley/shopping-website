@@ -6,7 +6,7 @@ body {
 
 /* ********** NAV BAR ************ */
 nav {
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.425);
     width: calc(100% - 240px);
     position: fixed;
     display: flex;
@@ -16,6 +16,10 @@ nav {
     padding-left: 100px;
     padding-bottom: 50px;
     padding-right: 100px;
+}
+
+.messages {
+    padding-top: 300px;
 }
 
 nav > div > div:nth-child(1) {
@@ -49,4 +53,8 @@ nav > div > div:nth-child(1) {
 
 .pages_text > a:hover {
     color: black;
+}
+
+.main-content {
+    padding-top: 300px;
 }

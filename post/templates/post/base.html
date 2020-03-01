@@ -26,22 +26,27 @@
         <div class="pages">
 
             <div class="pages_text">
-                <a href="#cart">Cart</a>
-                <a href="#settings">Settings</a>
-
 
                 <a href="#login">Login</a>
-                <a href="#register">Register</a>
+                <a href='#'>Register</a>
 
-                <a href="#new-post">New Post</a>
             </div>
         </div>
     </nav>
 
-    {% block content %}
+    <div class="main-content">
+        <div class="messages">
+        {% if messages %}
+            {% for message in messages %}
+                <div>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        </div>
 
-
-    {% endblock %}
+        {% block content %}{% endblock content %}
+    </div>
 
 </body>
 
