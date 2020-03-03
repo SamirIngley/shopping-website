@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     'post.apps.PostConfig',
     'users.apps.UsersConfig',
-    'crispy_forms',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
