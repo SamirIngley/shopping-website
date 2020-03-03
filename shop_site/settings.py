@@ -25,7 +25,7 @@ SECRET_KEY = '0l=sj48(2m9e=+#3m8_8k1nhx#_y=bw_g4unt*m9w&uv%i&-i5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'django-shopping-website.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django-shopping-website.herokuapp.com']
 
 
 # Application definition
@@ -122,9 +122,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+     os.path.join(BASE_DIR, "static"),
+ ]
+
+
 
 LOGIN_REDIRECT_URL = 'post-list-page'
 LOGIN_URL = 'login'
