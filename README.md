@@ -2,15 +2,12 @@ E-Commerce Shop Website
 ========================
 
 Heroku App link:
------------------
+
 https://django-shopping-website.herokuapp.com/
 -----------------
 
-Created in Django
 
 
-
-Features List
 
 |        Status         |           Feature                 |
 | --------------------- | --------------------------------- |
