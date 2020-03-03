@@ -1,13 +1,12 @@
 E-Commerce Shop Website
 ========================
 
-Heroku App link:
-
 https://django-shopping-website.herokuapp.com/
 -----------------
 
 
-
+Feature List:
+----------------
 
 |        Status         |           Feature                 |
 | --------------------- | --------------------------------- |
