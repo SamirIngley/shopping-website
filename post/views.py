@@ -11,10 +11,14 @@ from .models import Post
 
 class PostListView(ListView):
     model = Post
-    def get(self, request):
-        ''' Get a list of posts.'''
-        posts = self.get_queryset().all()
-        return render(request, 'post/list.html', {'posts':posts})
+    template_name ='post/list.html'
+    context_object_name = 'posts'
+    ordering = ['-date_posted']
+
+    # def get(self, request):
+    #     ''' Get a list of posts.'''
+    #     posts = self.get_queryset().all()
+    #     return render(request, 'post/list.html', {'posts':posts})
 
 class PostCreateView(CreateView):
     model = Post
@@ -23,10 +27,18 @@ class PostCreateView(CreateView):
 
 class PostDetailView(DetailView):
     model = Post
-    def get(self, request, slug):
-        ''' Renders specific post via slug.'''
-        post = self.get_queryset().get(slug__iexact=slug)
-        return render(request, 'post/about.html', {
-            'post':post
-        })
+
+    # def get(self, request, slug):
+    #     ''' Renders specific post via slug.'''
+    #     post = self.get_queryset().get(slug__iexact=slug)
+    #     return render(request, 'post/detail.html', {
+    #         'post':post , 'title':'About'
+    #     })
+
+    
+
+def about(request):
+    return render(request, 'post/about.html', {'title':'About'})
+    
+
 

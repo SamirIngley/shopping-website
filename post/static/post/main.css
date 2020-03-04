@@ -9,8 +9,7 @@
 /* ********** NAV BAR ************ */
 nav {
     background-color: rgba(250, 235, 215, 0.425);
-    /* width: calc(100% - 80px); */
-    width: 100%;
+    width: calc(100% - 180px);
     position: fixed;
     display: flex;
     justify-content: space-between;
