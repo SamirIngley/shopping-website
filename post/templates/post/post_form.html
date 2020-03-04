@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop</title>
+</head>
+
+<body>
+    <div class='content-section'>
+        <form method="POST">
+            
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4"> Post </legend>
+                {{ form.as_p }}
+            </fieldset>
+            <div class="form-group">
+                <button class="submit" type="submit" value="Submit">Post</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
+
+<style>
+
+body {
+    display: flex;
+    background-color: lightsteelblue;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.content-section{
+    background-color: lightslategrey;
+    display: flex;
+    justify-content: space-between;
+
+    width: 2000px;
+    height: 800px;
+    padding: 200px;
+}
+
+
+.form-group {
+    font-size: 2em;
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.submit {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    font-size: 22px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 8px;
+}
+
+.submit:hover {
+    color: white;
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+}
+
+
+.need-account {
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.already {
+    font-size: 3em;
+
+    margin: 20px;
+    text-align: center;
+}
+
+</style>
+

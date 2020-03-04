@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.views.generic.list import ListView
-from django.views.generic import CreateView
-from django.views.generic.detail import DetailView
+from django.views.generic import (
+     ListView, 
+     CreateView,
+     DetailView 
+)
 
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
@@ -22,8 +24,7 @@ class PostListView(ListView):
 
 class PostCreateView(CreateView):
     model = Post
-    fields = ['title', 'image', 'description', 'price']
-    template_name = 'post/new.html'
+    fields = ['title', 'description']
 
 class PostDetailView(DetailView):
     model = Post
