@@ -16,7 +16,7 @@ class PostListView(ListView):
     template_name ='post/list.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
-
+ 
     # def get(self, request):
     #     ''' Get a list of posts.'''
     #     posts = self.get_queryset().all()
