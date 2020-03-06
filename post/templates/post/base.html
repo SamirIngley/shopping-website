@@ -26,6 +26,7 @@
     <div class="pages">
         {% if user.is_authenticated %}
         <div class="pages_text">
+            <a href="{% url 'post-create-page' %}">New Post</a>
             <a href="{% url 'profile' %}">Profile</a>
             <a href="{% url 'logout' %}">Logout</a>
         {% else %}
@@ -51,7 +52,8 @@
         {% endif %}
         </div>
 
-        {% block content %}{% endblock content %}
+        {% block content %}
+        {% endblock content %}
 
     </div>
 

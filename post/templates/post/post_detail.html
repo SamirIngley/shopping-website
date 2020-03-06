@@ -8,6 +8,10 @@
 <h2>{{ object.title }}</h2>
 <p>By {{ object.author }} on {{ object.date_posted|date:"F d, Y" }}</p>
 <p>{{ object.description }}</p>
-
-
+{% if object.author == user %}
+<div>
+    <a href="{% url 'post-update-page' object.id %}">Update</a>
+    <a href="{% url 'post-delete-page' object.id %}">Delete</a>
+</div>
+{% endif %}
 {% endblock content %}
