@@ -22,7 +22,7 @@ Project Info:
 |Criteria	                                   |  Possible	| Earned | Status  ️|   In Project
 |----------------------------------------------|------------|--------|---------|---------------
 |At least 2 apps in project	                   |    40	    |  40	 |  ✅     | users & post
-|At least 2 tests in tests.py in each app	   |    30	    |  00	 |  ⏳     | unit & integrate
+|At least 2 tests in tests.py in each app	   |    30	    |  00	 |  ✅     | unit & integrate
 |Modular design	                               |    25	    |  25    |  ✅     | users & post
 |RESTful API using Django REST Framework	   |    25	    |  00	 |  ⏳     | 
 |Template-based front-end interface	           |    25	    |  25	 |  ✅     | html & css
