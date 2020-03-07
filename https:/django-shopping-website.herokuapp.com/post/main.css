@@ -1,0 +1,65 @@
+.main-content {
+    background-color: lightblue;
+    color: black;
+    margin: 40px;
+    
+}
+
+body {
+    background-color: lightblue;
+}
+
+/* ********** NAV BAR ************ */
+nav {
+    background-color: rgba(250, 235, 215, 0.425);
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+}
+
+nav > div > div:nth-child(1) {
+    font-size: 2em;
+}
+
+.name > a {
+    text-decoration: none;
+}
+
+.name > a:link {
+    color:black;
+}
+
+.name > a:visited {
+    color:black;
+}
+
+.pages_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.pages_text > a {
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+}
+
+.pages_text > a:hover {
+    color: black;
+}
+
+.messages {
+    padding-top: 300px;
+}
+
+.main-content {
+    padding-top: 0px;
+}
