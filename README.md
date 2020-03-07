@@ -1,5 +1,4 @@
-E-Commerce Shop Website
-========================
+### E-Commerce Shop Website
 
 https://django-shopping-website.herokuapp.com/
 -----------------
@@ -35,5 +34,4 @@ Project Info:
 |TOTAL	                                       |   235	    | 210    |  89%    | 	
 
 Issues:
-templates won't render static files/css in heroku
 secret key... can't find what i'm supposed to do for that. Can't leave it blank, tried adding a .txt for it
