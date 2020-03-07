@@ -12,7 +12,7 @@ class PostTestCase(TestCase):
         user = User()
         user.save()
 
-        post = Post(title="Test Post", description="testing")
+        post = Post(title="Test Post", description="testing", author=user)
         post.save()
 
         # self.assertEqual(page.pk, 'my')
@@ -28,5 +28,3 @@ class PostListViewTestCases(TestCase):
 
         self.assertEqual(response.status_code, 200)
 
-        responses=response.context['posts']
-        self.assertEqual(len(responses), 2)

@@ -5,15 +5,14 @@ https://django-shopping-website.herokuapp.com/
 -----------------
 
 
-Feature List:
-----------------
+Project Info:
 
 |        Status         |           Feature                 |
 | --------------------- | --------------------------------- |
 |          ✅           | Deployed                          |
-|          ✅           | Authentication and Authorization. |
+|          ✅           | Authentication and Authorization  |
 |          ✅           | User Profiles                     |
-|          ✅           | Admin CRUD Posts                  |
+|          ✅           | Auth can CRUD Posts               |
 |          ❌           | User Cart                         |
 |          ❌           | User Checkout                     |
 
@@ -22,16 +21,16 @@ Feature List:
 
 |Criteria	                                   |  Possible	| Earned | Status  ️|   In Project
 |----------------------------------------------|------------|--------|---------|---------------
-|At least 2 apps in project	                   |    40	    |  00	 |  ✅     | users & post
+|At least 2 apps in project	                   |    40	    |  40	 |  ✅     | users & post
 |At least 2 tests in tests.py in each app	   |    30	    |  00	 |  ⏳     | unit & integrate
-|Modular design	                               |    25	    |  00	 |  ✅     | users & post
+|Modular design	                               |    25	    |  25    |  ✅     | users & post
 |RESTful API using Django REST Framework	   |    25	    |  00	 |  ⏳     | 
-|Template-based front-end interface	           |    25	    |  00	 |  ✅     | html & css
-|Has purpose & fulfills proposal	           |    20	    |  00	 |  ✅     | CRUD post, profile
+|Template-based front-end interface	           |    25	    |  25	 |  ✅     | html & css
+|Has purpose & fulfills proposal	           |    20	    |  20	 |  ✅     | CRUD post
 |Integrates an open source app	               |    20	    |  00	 |  ⏳     | 
-|Deployed & usable	                           |    15	    |  00	 |  ✅     | heroku link above
-|Includes database migrations in each app	   |    15	    |  00	 |  ✅     | profile & post
-|README with documentation	                   |    10	    |  00	 |  ✅     | install instruct.
-|Public GitHub repo	                           |     5	    |  00	 |  ✅     | on my Github
+|Deployed & usable	                           |    15	    |  15	 |  ✅     | heroku link above
+|Includes database migrations in each app	   |    15	    |  15	 |  ✅     | profile & post
+|README with documentation	                   |    10	    |  10	 |  ✅     | install instruct.
+|Public GitHub repo	                           |     5	    |  05	 |  ✅     | SamirIngley
 |No exposed secrets	                           |     5	    |  00	 |  ⏳     | 
-|TOTAL	                                       |   235	    |  00    |         | 	
+|TOTAL	                                       |   235	    | 155    |         | 	
