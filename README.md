@@ -32,5 +32,5 @@ Project Info:
 |Includes database migrations in each app	   |    15	    |  15	 |  ✅     | profile & post
 |README with documentation	                   |    10	    |  10	 |  ✅     | install instruct.
 |Public GitHub repo	                           |     5	    |  05	 |  ✅     | SamirIngley
-|No exposed secrets	                           |     5	    |  00	 |  ⏳     | 
-|TOTAL	                                       |   235	    | 210    |  89%    | 	
+|No exposed secrets	                           |     5	    |  05	 |  ✅     | 
+|TOTAL	                                       |   235	    | 215    |  91%    | 	
