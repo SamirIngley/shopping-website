@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0l=sj48(2m9e=+#3m8_8k1nhx#_y=bw_g4unt*m9w&uv%i&-i5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django-shopping-website.herokuapp.com']
 
@@ -123,13 +123,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATICFILES_DIRS = [
-    "post/static",
-    "users/static"
-]
+
 
 STATIC_URL = "static/"
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static")
+
+# STATICFILES_DIRS = [
+#     "post/static",
+#     "users/static"
+# ]
 
 LOGIN_REDIRECT_URL = 'post-list-page'
 LOGIN_URL = 'login'
