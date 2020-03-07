@@ -8,7 +8,7 @@
     <h1>{{ user.username }}</h1>
 
     <div class="media">
-        <img class="rounded-circle" src="{{ user.profile.image.url }}">
+        <img class="rounded-circle" src="{% static shop_site/users/static/users/profile_pics/8-bit2.JPG %}">
             <div class="media-body">
                 <h2 class="account-heading">{{ user.username }}</h2>
                 <p class="text">{{ user.email }}</p>

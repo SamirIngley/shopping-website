@@ -12,11 +12,11 @@ Project Info:
 |          ✅           | Deployed                          |
 |          ✅           | Authentication and Authorization  |
 |          ✅           | User Profiles                     |
-|          ✅           | Auth can CRUD Posts               |
+|          ✅           | Crud Posts *                      |
 |          ❌           | User Cart                         |
 |          ❌           | User Checkout                     |
 
-
+* You can only CRUD posts you create!
 
 
 |Criteria	                                   |  Possible	| Earned | Status  ️|   In Project
@@ -32,5 +32,9 @@ Project Info:
 |Includes database migrations in each app	   |    15	    |  15	 |  ✅     | profile & post
 |README with documentation	                   |    10	    |  10	 |  ✅     | install instruct.
 |Public GitHub repo	                           |     5	    |  05	 |  ✅     | SamirIngley
-|No exposed secrets	                           |     5	    |  05	 |  ✅     | 
-|TOTAL	                                       |   235	    | 215    |  91%    | 	
+|No exposed secrets	                           |     5	    |  00	 |  ⏳     | 
+|TOTAL	                                       |   235	    | 210    |  89%    | 	
+
+Issues:
+templates won't render static files/css
+secret key... can't find what i'm supposed to do for that. Can't leave it blank, tried adding a .txt for it

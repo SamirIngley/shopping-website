@@ -8,7 +8,6 @@
     
         <h2><a href="{% url 'post-detail-page' post.id%}">{{ post.title }}</a></h2>
         <p>By {{ post.author }} on {{ post.date_posted|date:"F d, Y" }}</p>
-        <p>{{ post.description }}</p>
 
     {% endfor %}
   
