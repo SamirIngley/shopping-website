@@ -4,7 +4,6 @@ E-Commerce Shop Website
 https://django-shopping-website.herokuapp.com/
 -----------------
 
-
 Project Info:
 
 |        Status         |           Feature                 |
