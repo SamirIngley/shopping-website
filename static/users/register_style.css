@@ -10,7 +10,7 @@ body {
 
 
 .content-section{
-    background-color: lightslategrey;
+    background-color: rgba(250, 235, 215, 0.425);
     display: flex;
     justify-content: space-between;
 
